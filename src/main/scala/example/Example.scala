@@ -35,7 +35,29 @@ object Example extends App{
 
   println(tailRecursiveFactorial(4))
 
-  def pascalBuild(x: Int) =
-    
-  println("3 \n 5"+4)
+  def pascal(c: Int, r: Int): Int = (c,r) match {
+    case (0, _) => 1
+    case (`c`, `r`) if c == r => 1
+    case (`c`, `r`) => pascal(c, r-1)+pascal(c-1,r-1)
+  }
+
+  def matchTest(x: Int): String = x match {
+    case 1 => "one"
+    case 2 => "two"
+    case _ => "many"
+  }
+
+  def newpascal(c: Int, r:Int): Int =
+    if (c == 0 || c == r) 1
+    else newpascal(c-1, r-1) + newpascal(c, r-1)
+
+  def parenthesesBalancing(chars: List[Char]): Boolean =
+    // I told him (that it’s not (yet) done). (But he wasn’t listening)
+    true
+
+  println(matchTest(3))
+  println(pascal(2,3))
+  println(newpascal(2,3))
+  println(parenthesesBalancing("I told him (that it’s not (yet) done). (But he wasn’t listening)".toList))
+
 }
