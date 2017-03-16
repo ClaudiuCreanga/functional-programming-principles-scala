@@ -39,3 +39,38 @@ def justSaying = "No accolades"
 val test = (x: Int) => x+1
 
 test.apply(6)
+test(6)
+
+def multiplication(x: Int = 2, y:Int = 3) = {
+  println("x:" + x + "y" + y)
+  x+ y
+}
+
+multiplication(3,4)
+multiplication()
+
+
+// varied length arguments
+def showAll(theArgs: Int*) = {
+  theArgs.foreach(println)
+}
+
+showAll(1,3,4,5)
+
+def multiply(x: Int, y:Int) = {
+  x+ y
+}
+
+def timeswo = multiply(2, _ :Int)
+
+timeswo(3)
+
+
+def theMult(x:Int)(y:Int):Int = {
+  x * y
+}
+
+theMult(2)(3)
+var amulti = theMult(2)_
+amulti(4)
+
