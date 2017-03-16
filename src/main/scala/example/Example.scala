@@ -52,7 +52,6 @@ object Example extends App{
     else newpascal(c-1, r-1) + newpascal(c, r-1)
 
   def parenthesesBalancing(chars: List[Char]): Boolean =
-    // I told him (that it’s not (yet) done). (But he wasn’t listening)
     true
 
   println(matchTest(3))
