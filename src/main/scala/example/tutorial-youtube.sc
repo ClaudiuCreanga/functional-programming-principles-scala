@@ -74,3 +74,12 @@ theMult(2)(3)
 var amulti = theMult(2)_
 amulti(4)
 
+// variable length arguments
+// when you don't know exactly how many arguments you'll have
+def showMultiple(theArgs: Int*) = {
+  theArgs.foreach(println(_)) // underscore sintactic sugar
+
+  theArgs.foreach((a: Int) => println(a)) // anonyomous function in foreach
+}
+
+showMultiple(1,2,3,4,5,6)
