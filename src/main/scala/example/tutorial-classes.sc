@@ -19,3 +19,4 @@ println(theDuck.color)
 println(theDuck.nickName)
 println(theDuck.canSing)
 println(theDuck.anonim())
+
