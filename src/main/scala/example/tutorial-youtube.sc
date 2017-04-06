@@ -44,7 +44,7 @@ test(6)
 def multiplication(x: Int = 2, y:Int = 3) = {
   println("x:" + x + "y" + y)
   x+ y
-}
+}'
 
 multiplication(3,4)
 multiplication()
