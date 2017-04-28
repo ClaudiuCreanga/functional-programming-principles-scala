@@ -63,10 +63,16 @@ class next20LeapYears()
   val next20LeapYearsResult: List[Int] = List.range(nextLeapYear, nextLeapYear+4*20, 4)
 
   def getYears: List[Int] = {
-    next20LeapYearsResult 
+    next20LeapYearsResult
   }
 
 }
 
 var leap = new next20LeapYears()
 leap.getYears
+
+val myList = List((1,2),(3,4))
+myList.unzip
+
+val newList = List.fill(3)(5)
+newList

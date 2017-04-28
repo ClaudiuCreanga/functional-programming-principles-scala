@@ -44,7 +44,7 @@ test(6)
 def multiplication(x: Int = 2, y:Int = 3) = {
   println("x:" + x + "y" + y)
   x+ y
-}'
+}
 
 multiplication(3,4)
 multiplication()
@@ -83,3 +83,14 @@ def showMultiple(theArgs: Int*) = {
 }
 
 showMultiple(1,2,3,4,5,6)
+
+val myList: List[Int] = List(1,2,3,4)
+println(myList(2))
+
+val x = 5
+val y = 6
+(x: Int,y: Int) => x > y
+
+def compose[A,B,C](f: B => C, g: A => B): A => C =
+  a => f(g(a))
+
